@@ -9,14 +9,6 @@
 # # print(f"Your name is {l_name}, {f_name} {l_name}.")
 print("We're going to create a Mad Libs story, would you like to participate? Enter Y/N.")
 
-# for x in pg:
-#   pg = input()
-# if pg == "N":
-#   print("Ok. Thank you, come again!")
-# elif pg == "Y":
-#   continue
-# else:
-#   print("a is greater than b")
 while True:
     a = input("Enter yes/no to continue")
     if a=="yes":
