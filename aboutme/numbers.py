@@ -9,3 +9,4 @@ print()
 
 cookies = input("How many cookies do you have? ")
 people_num = input("How many people are there? ")
+ 
