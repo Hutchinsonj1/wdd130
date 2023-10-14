@@ -1,2 +1,2 @@
 age = 25
-print("You are", age)
+print("You are $", age)
