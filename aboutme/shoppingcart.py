@@ -31,10 +31,10 @@ while action != "quit":
             items.append(new_item)
             price = float(input("What is the price of '{}'? ".format(new_item)))
             prices.append(price)
-            print(f"'{new_item}' has been added to cart.")
+            print(f"\n'{new_item}' has been added to cart.")
 
     elif action == "2":
-        print("The contents of the shopping cart are: ")
+        print("\nThe contents of the shopping cart are: ")
 
         for i in range(len(items)):
              item = items[i]
@@ -45,16 +45,16 @@ while action != "quit":
     elif action == "3":
         remove = int(input("What item would you like to remove? "))
         items.pop(remove)
-        print("Item removed.")
+        print("\nItem removed.")
 
     elif action == "4":
         for i in range(len(items)):
             total_p += prices[i]
-        print(f"The total price of the items in the shopping cart is: {total_p}")
+        print(f"\nThe total price of the items in the shopping cart is: {total_p}")
 
     elif action == "5":
         action == "quit"
-        print("Thank you. Goodbye. If you want to try again, just restart the program!")
+        print("\nThank you. Goodbye. If you want to try again, just restart the program!")
         break
 
     else:

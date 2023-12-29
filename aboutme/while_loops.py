@@ -17,7 +17,7 @@ while number <= -1:
     number = int(input("Please enter a positive number: "))
     # Jump BACK up to line 15
 
-print("Finished with the loop")
+print("Finished with the loop\n")
 
  
 # candy = "no"

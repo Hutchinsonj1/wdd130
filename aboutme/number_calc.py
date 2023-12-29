@@ -22,9 +22,10 @@ while new_number != 0:
         numbers.append(new_number)
         total = total + new_number
     # if new_number > 0:
-    #     pos_number_list.ap
+    #     pos_number_list.ap7
 
-print(f"The sum is: {total:.2f}")
+
+print(f"\nThe sum is: {total:.2f}")
 
 #Average
 count = len(numbers)  
@@ -33,7 +34,9 @@ print(f"The average is: {average}")
 
 # There is a function we found called 'max', and it works great
 x = max(numbers)
+y = min(numbers)
 print(f"The largest number is: {x}")
+print(f"The smallest number is: {y}")
 print()
 
 
