@@ -50,11 +50,11 @@ while action != "quit":
     elif action == "4":
         for i in range(len(items)):
             total_p += prices[i]
-        print(f"\nThe total price of the items in the shopping cart is: {total_p}")
+        print(f"\nThe total price of the items in the shopping cart is: ${total_p}")
 
     elif action == "5":
         action == "quit"
-        print("\nThank you. Goodbye. If you want to try again, just restart the program!")
+        print("\nThank you. Play again!")
         break
 
     else:
