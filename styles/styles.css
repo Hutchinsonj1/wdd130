@@ -1,0 +1,69 @@
+* {
+	margin: 1rem;
+	padding: 0.5rem;
+}
+aside {
+	width: 20rem;
+	margin: 0;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 1rem;
+	background-color: #eee;
+	color: #333;
+	text-align: center;
+}
+aside img{
+	width: 200px;
+/* This keeps the ASPECT ratio consistent when setting the other dimension (width): */
+	height: auto;
+}
+
+/* block-level elements */
+p,
+div,
+main,
+footer {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+p {
+	background-color: #bed;
+}
+
+div {
+	background-color: #eee;
+}
+
+/* inline elements */
+img,
+a,
+span,
+button {
+	border: 1px dashed red;
+}
+
+strong {
+	color: red;
+}
+
+nav{
+	background-color: steelblue;
+	padding: 10px;
+}
+nav a{
+	color: white;
+	display: block;
+	padding: 20px;
+}
+h1 {
+	color: steelblue;
+}
+img{
+	width: 150px;
+	height: auto;
+	border: 1px solid steelblue;
+	padding: 2px;
+	box-shadow: 0 0 30px gray;
+}
+p{
+	padding: 10px;
+}
