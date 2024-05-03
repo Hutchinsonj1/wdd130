@@ -10,7 +10,7 @@ aside {
 	background-color: #eee;
 	color: #333;
 	text-align: center;
-}
+} 
 aside img{
 	width: 200px;
 /* This keeps the ASPECT ratio consistent when setting the other dimension (width): */
@@ -47,5 +47,5 @@ img{
 	box-shadow: 0 0 30px gray;
 }
 p{
-	padding: 0;
+	padding: 10px;
 }
