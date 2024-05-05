@@ -10,40 +10,12 @@ aside {
 	background-color: #eee;
 	color: #333;
 	text-align: center;
-}
+} 
 aside img{
 	width: 200px;
 /* This keeps the ASPECT ratio consistent when setting the other dimension (width): */
 	height: auto;
 }
-
-/* block-level elements
-p,
-div,
-main,
-footer {
-	border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-p {
-	background-color: #bed;
-}
-
-div {
-	background-color: #eee;
-}
-
-/* inline elements */
-img,
-a,
-span,
-button {
-	border: 1px dashed red;
-}
-
-strong {
-	color: red;
-} */
 
 footer{
 	margin-top: 15px;
