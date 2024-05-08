@@ -5,12 +5,8 @@
 }
 aside {
 	width: 20rem;
-	margin: 1rem;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	padding: 1rem;
-	background-color: #eee;
-	color: #333;
 	text-align: center;
+	position: relative;
 } 
 aside img{
 	width: 200px;
@@ -40,14 +36,23 @@ nav a{
 h1 {
 	color: steelblue;
 }
-img{
+main img{
 	width: 150px;
 	height: auto;
 	border: 1px solid steelblue;
 	padding: 2px;
 	box-shadow: 0 0 30px gray;
+	float: right;
 }
 p{
 	padding: 10px;
 }
 
+/* Class Selectors */
+.box{
+	margin: 1rem;
+	border: 1px solid rgba(0,0,0,.1);
+	padding: 1rem;
+	background-color: aqua;
+	color: black;
+}
