@@ -14,6 +14,10 @@ aside img{
 	height: auto;
 }
 
+aside h2{
+	position: absolute;
+}
+
 footer{
 	margin-top: 15px;
 	border-top: 1px solid #000;
@@ -53,6 +57,6 @@ p{
 	margin: 1rem;
 	border: 1px solid rgba(0,0,0,.1);
 	padding: 1rem;
-	background-color: aqua;
+	background-color: rgb(159, 249, 249);
 	color: black;
 }
