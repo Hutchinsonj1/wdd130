@@ -1,6 +1,7 @@
 * {
-	margin: 1rem;
-	padding: 0.5rem;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 aside {
 	width: 20rem;
@@ -49,3 +50,4 @@ img{
 p{
 	padding: 10px;
 }
+
