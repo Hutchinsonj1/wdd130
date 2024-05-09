@@ -48,3 +48,8 @@ article img{
     color: var(--primary-color);
   }
 
+  nav a img{
+    height: 100px;
+    width: 100px;
+  }
+
