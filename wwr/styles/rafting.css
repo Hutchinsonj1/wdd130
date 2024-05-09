@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Salsa&display=swap');
+
+/* *{
+    width: 90%;
+} */
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1{
+    position: absolute;
+}
+
+article{
+    position: absolute;
+    background-color: rgb(74, 15, 31,.9);
+}
+
+article img{
+    float: right;
+}
+
+
+:root {
+    --primary-color: #1894cf;
+    --secondary-color: #4a0f1f;
+    --accent1-color: #db8227;
+    --accent2-color: #000000;
+  
+    --heading-font: "Salsa", cursive;
+    --paragraph-font: "Lato", sans-serif;
+  
+    --nav-background-color: #1894cf;
+    --nav-link-color: #4a0f1f;
+    --nav-hover-link-color: #db8227;
+    --nav-hover-background-color: #000000;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+  }
+
