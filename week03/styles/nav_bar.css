@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+header{
+    background-color: aquamarine;
+    border: 2px solid #000;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+}
+
+body{
+    background-color: rgb(187, 255, 232);
+}
+
+ul{
+    list-style-type: none;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li{
+    display: inline;
+    border: 2px solid black;
+    float: left;
+    /* padding: 5px; */
+}
+
+li a{
+    display: block;
+    color: black;
+    padding: 8px 20px;
+    background-color: gray;
+}
