@@ -2,8 +2,8 @@
 
 :root {
   --primary-color: #1894cf;
-  --secondary-color: #4a0f1f;
-  --accent1-color: #db8227;
+  --secondary-color: #db8227;
+  --accent1-color: #4a0f1f;
   --accent2-color: #000000;
 
   --heading-font: "Salsa", cursive;
@@ -26,7 +26,7 @@ p {
 }
 
 body{
-  width: 80%;
+  /* width: 80%; */
 }
 
 header{
@@ -38,11 +38,11 @@ nav {
 }
 
 nav a img{
-  height: 100px;
-  width: 100px;
+  height: 20px;
+  width: 20px;
 }
 
-.hero {
+.hero div {
     position: relative;
 }
 
@@ -52,17 +52,15 @@ nav a img{
   height: auto;
 }
 
-h1{
+.hero article img{
     position: absolute;
-}
-
-article{
-    position: absolute;
-    background-color: rgb(74, 15, 31,.9);
-}
-
-article img{
     float: right;
+    height: 50px;
+    width: auto;
+}
+
+h1 {
+  position: absolute;
 }
 
 
