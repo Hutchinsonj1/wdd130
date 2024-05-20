@@ -1,0 +1,31 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 100px repeat(4, 100px);
+    grid-template-rows: 20px;
+    align-content: flex-end;
+    gap: 30px;
+    background-color: #ffffaa;
+    height: 100px;
+    float: right;
+    width: 100%;
+}
+
+.grid{
+    /* display: grid; */
+    border: 1px solid black;
+    background-color: #ffa044;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    /* align-content: end; */
+}
+
+
+.image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border: none;
+    background-color: white;
+}
+
