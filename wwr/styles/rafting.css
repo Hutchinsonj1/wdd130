@@ -68,10 +68,12 @@ header, main, footer {
   background-color: var(--nav-background-color);
   align-items: center;
   border: 1px solid #000;
+  justify-content: center;
 }
 
-header img {
-  max-width: 190px;
+.logo {
+  max-width: 150px;
+  align-self: center;
 }
 
 nav {
@@ -79,6 +81,10 @@ nav {
   font-family: var(--heading-font);
   text-decoration: none;
   justify-content: space-around;
+}
+
+.grid:hover{
+  background-color: #000;
 }
 
 /* # changed: */
@@ -106,7 +112,7 @@ p {
 }
 
 img {
-  width: 100%;
+  /* width: 100%; */
 }
 
 .sociallinks a {
@@ -129,14 +135,16 @@ img {
   border: 10px solid gray; */
 }
 
+article {
+  position: absolute;
+}
+
 .hero {
     position: relative;
 }
 
 .hero >img {
-  display: block;
-  width: 100%;
-  height: auto;
+    width: 100%;
 }
 
 .hero article img{
@@ -145,32 +153,13 @@ img {
     width: auto;
 }
 
-.h1_title {
+.hero h1 {
   position: absolute;
-  top: 20px;
+  top: 50px;
+  background-color: #db904688;
   width: 100%;
   text-align: center;
   color: #fff;
-}
-
-.abs-article {
-  background-color: rgba(255, 255, 255, .35);
-  position: absolute;
-  top: 6rem;
-  left: 6rem;
-  right: 6rem;
-}
-
-.abs-article img {
-  float: right;
-  margin: 2rem;
-  width: 15rem;
-}
-
-.abs-article p {
-  color: #fff;
-  font-size: x-large;
-  text-align: center;
 }
 
 
