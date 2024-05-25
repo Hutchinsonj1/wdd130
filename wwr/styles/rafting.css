@@ -105,14 +105,11 @@ p {
   padding: 20px;
   font-family: var(--paragraph-font);
   color: var(--secondary-color);
+  top: 50%;
 }
 
 .space{
   height: 100px;
-}
-
-img {
-  /* width: 100%; */
 }
 
 .sociallinks a {
@@ -135,13 +132,7 @@ img {
   border: 10px solid gray; */
 }
 
-article {
-  position: absolute;
-}
 
-.hero {
-    position: relative;
-}
 
 .hero >img {
     width: 100%;
@@ -162,5 +153,26 @@ article {
   color: #fff;
 }
 
+.hero {
+  position: relative;
+}
 
+article {
+  position: absolute;
+}
+
+.hero p {
+  position: absolute;
+  top: 125px;
+  background-color: #db904688;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.hero article img {
+  position: absolute;
+  top: 50px;
+  height: 20px;
+}
 
