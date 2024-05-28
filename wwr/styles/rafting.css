@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Salsa&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   --primary-color: #1894cf;
   --secondary-color: #db8227;
@@ -26,153 +20,122 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--primary-color);
 }
 
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2.5rem;
-}
-
-h3 {
-  font-size: 2;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-h5 {
-  font-size: 1rem;
-}
-
-h6 {
-  font-size: 0.5rem;
-}
-
-body{
-  background-color: #1895cf29;
-  font-family: var(--paragraph-font);
-}
-/* dont ever do a width for the body, better is set the header, main, and footer to a MAX WIDTH: ~1200px or less  */
-
-header, main, footer {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* used to be header */
-.grid-container { 
+.grid-container {
   display: grid;
   grid-template-columns: repeat(4, 100px);
   background-color: var(--nav-background-color);
-  align-items: center;
-  border: 1px solid #000;
+  border: 1px solid black;
   justify-content: center;
+}
+
+.grid:hover{
+  background-color: var(--nav-hover-background-color);
+}
+
+.grid{
+  text-decoration: none;
+  background-color: var(--nav-background-color);
+  color: #fff;
+  padding: 1em;
+  justify-self: center;
+}
+
+header{
+  display: grid;
+  grid-template-columns: 200px auto;
+  align-items: center;
 }
 
 .logo {
   max-width: 150px;
-  align-self: center;
+  justify-self: center;
 }
 
 nav {
   display: flex;
-  font-family: var(--heading-font);
-  text-decoration: none;
-  justify-content: space-around;
 }
 
-.grid:hover{
-  background-color: #000;
-}
-
-/* # changed: */
-.grid {
-  text-decoration: none;
-  padding: 1em;
-  justify-self: center;
-  color: #fff;
-
-  display: flex;
-  margin: -1rem;
-  font-family: var(--heading-font);
+a {
   text-decoration: none;
 }
 
 
-p {
-  padding: 20px;
-  font-family: var(--paragraph-font);
-  color: var(--secondary-color);
-  top: 50%;
+body {
+  background-color: #1895cf29;
 }
 
-.space{
-  height: 100px;
+.hero {
+    position: relative;
 }
 
-.sociallinks a {
-  height: 40px;
-  width: 40px;
-  padding: 0;
-  border: none;
-}
-
-.adventure {
-  /* align-items: center; */
-  width: 400px;
-  width: auto;
-  padding: 20px;
-  box-shadow: 0px 0px 30px gray;
-
-  /* border: 1px dotted black; */
-  /* box-sizing: border-box;
+.hero img {
+  /* display: block; */
   width: 100%;
-  border: 10px solid gray; */
-}
-
-
-
-.hero >img {
-    width: 100%;
+  /* height: auto; */
 }
 
 .hero article img{
-    float: right;
-    height: 200px;
-    width: auto;
+  width: 200px;
+  float: right;
+
 }
 
 .hero h1 {
   position: absolute;
   top: 50px;
-  background-color: #db904688;
+  background-color: #ea440c47;
   width: 100%;
   text-align: center;
-  color: #fff;
-}
-
-.hero {
-  position: relative;
 }
 
 article {
+  left: 50px;
   position: absolute;
+  top: 125px;
+  right: 50px;
+  background-color: #ea440c47;
+  color: var(--primary-color);
 }
 
 .hero p {
-  position: absolute;
-  top: 125px;
-  background-color: #db904688;
-  width: 100%;
-  text-align: center;
   color: #fff;
+  padding: 0 2em;
 }
 
-.hero article img {
-  position: absolute;
-  top: 50px;
-  height: 20px;
+p {
+  font-family: var(--paragraph-font);
+  color: var(--primary-color);
+}
+
+.adventures {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px 20px;
+}
+
+.adventures h2 {
+  grid-column: 1/-1;
+  justify-self: center;
+}
+
+img {
+  width: 100%;
+}
+
+.sociallinks img {
+  width: 20px;
+  justify-self: center;
+}
+
+figure {
+  margin: 0;
+  background-color: #5633f1;
+  color: #fff;
+  /* padding: 0 0 1em 0; */
+}
+
+figcaption{
+  font-size: 14px;
+  padding: .25em;
 }
 

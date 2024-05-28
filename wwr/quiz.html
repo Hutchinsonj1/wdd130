@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <meta name="description" content="html quiz your skills html knowledge">
+    <meta name="author" content="Jaden Hutchinson">
+  <title>WDD 130 |Quiz Form - HTML</title>
+  <link rel="stylesheet" href="/wwr/styles/quiz.css">
 </head>
 <body>
-    
+<header>
+  <h1>WDD 130 | Jaden Hutchinson | Quiz Form - HTML</h1>
+</header>
+<main>
+
+<form>
+    <fieldset>
+        <legend>Quiz</legend>
+            <label for="q1">What is the purpose of a div element?</label>
+            <input type="text" id="q1" name="q1">
+            <label for="q2">What is the purpose of the <span>aside</span> element in HTML?</label>
+            <textarea id="q2" name="q2" rows="3" placeholder=""></textarea>
+            <label for="q3">What is the purpose of the form element in HTML?</label>
+            <select id="q3" name="q3">
+              <option value="empty">An empty element with no specifications</option>
+              <!-- correct answer below: -->
+              <option value="form">represents a section containing interactive controls for submitting info</option>
+              <option value="div">defines a division or section in an HTML document</option>
+              <option value="span">an inline element used to mark up part of the text</option>
+            </select>
+            <label for="q4">What is the CSS property for the 3rd biggest heading?</label>
+            <input type="text" id="q4" name="q4">
+        <!--<label for="win">Are you a winner?</label>
+            <input type="checkbox" id="win" name="win"> -->
+    </fieldset>
+
+    <button type="submit">Submit Poll</button>
+    </form>
+</main>
+<footer>
+  <p>©2024 | Quiz Form - HTML | Jaden Hutchinson</p>
+</footer>
 </body>
 </html>
