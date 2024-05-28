@@ -36,16 +36,18 @@ fieldset {
 form {
     padding: 35px;
     position: relative;
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
+    margin: 0;
 }
 
 button {
-    position: absolute;
+    width: auto;
+    position: relative;
     text-align: center;
     background-color: rgba(44, 89, 223, 0.452);
     margin-top: 10px;
-    padding: 0px 18px;
+    padding: 10px 200px;
 
 }
 
