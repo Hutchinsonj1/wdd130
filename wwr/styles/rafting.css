@@ -92,6 +92,7 @@ body {
   background-color: #ea440c47;
   width: 100%;
   text-align: center;
+  padding: 10px;
 }
 
 article {
@@ -129,20 +130,13 @@ img {
 }
 
 .sociallinks img {
-  width: 20px;
+  width: 30px;
 }
-/* 
-.sociallinks{
-  display: flex;
-} */
 
-footer{
-  display: flex;
-  /* align-content: center; */
-  justify-content: center;
+.sociallinks a {
+  /* background-color: red; */
+  padding-right: 10px;
 }
-  
-
 
 figure {
   margin: 0;
@@ -215,3 +209,16 @@ button:hover {
   background-color: var(--nav-hover-background-color);
   border: var(--nav-background-color);
 }
+
+footer{
+  padding: 20px;
+  display: flex;
+  /* align-content: center; */
+  justify-content: center;
+}
+
+.copyright {
+  padding-right: 20px;
+  align-self: center;
+}
+
