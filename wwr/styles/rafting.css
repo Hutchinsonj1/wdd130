@@ -121,8 +121,13 @@ p {
 }
 
 .adventures h2 {
+  padding-top: 30px;
   grid-column: 1/-1;
   justify-self: center;
+}
+
+.adventures figure {
+  text-align: center;
 }
 
 img {
@@ -131,6 +136,7 @@ img {
 
 .sociallinks img {
   width: 30px;
+  padding-top: 25px;
 }
 
 .sociallinks a {
@@ -164,11 +170,14 @@ fieldset {
 #wrapper {
   display: flex;
   border: 2px solid #5633f1;
+  border-top: 20px solid #5633f1;
+  border-bottom: 20px solid #5633f1;
   font-family: var(--paragraph-font);
   /* margin-top: 20px; */
 }
 #div1 {
     /* border: 1px solid red; */
+    padding-top: 10px;
     color: #000;
     flex: 3;
     text-align: center;
@@ -179,6 +188,7 @@ fieldset {
 }
 
 legend{
+  padding-top: 20px;
   color: #5633f1;
   text-align: center;
   font-weight: 700;
@@ -218,6 +228,7 @@ footer{
 }
 
 .copyright {
+  padding-top: 20px;
   padding-right: 20px;
   align-self: center;
 }
