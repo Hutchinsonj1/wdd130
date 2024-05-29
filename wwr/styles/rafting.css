@@ -15,11 +15,17 @@
   --nav-hover-background-color: #000000;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
+/* FIX COLOR! */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 100px);
@@ -124,8 +130,19 @@ img {
 
 .sociallinks img {
   width: 20px;
-  justify-self: center;
 }
+/* 
+.sociallinks{
+  display: flex;
+} */
+
+footer{
+  display: flex;
+  /* align-content: center; */
+  justify-content: center;
+}
+  
+
 
 figure {
   margin: 0;
@@ -139,3 +156,62 @@ figcaption{
   padding: .25em;
 }
 
+iframe{
+  border: none;
+  top: 40px;
+  padding: 30px;
+}
+
+fieldset {
+  padding: 30px;
+  border: 1px solid #5633f1;
+}
+
+#wrapper {
+  display: flex;
+  border: 2px solid #5633f1;
+  font-family: var(--paragraph-font);
+  /* margin-top: 20px; */
+}
+#div1 {
+    /* border: 1px solid red; */
+    color: #000;
+    flex: 3;
+    text-align: center;
+}
+#div2 {
+    /* border: 1px solid green; */
+    flex: 1;
+}
+
+legend{
+  color: #5633f1;
+  text-align: center;
+  font-weight: 700;
+}
+
+#wrapper h1, h2, p {
+  color: #000;
+}
+
+textarea {
+  width: 100%;
+  border: none;
+}
+
+button {
+  width: 100%;
+  color: #fff;
+  background-color: var(--nav-background-color);
+  border: 1px solid #5633f1;
+  font-family: var(--paragraph-font);
+  padding: 20px;
+  font-size: 1rem;
+  border-radius: 20px;
+  margin-bottom: 100%;
+}
+
+button:hover {
+  background-color: var(--nav-hover-background-color);
+  border: var(--nav-background-color);
+}
