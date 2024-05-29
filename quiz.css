@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgba(44, 89, 223, 0.475);
+}
+
 header, main, footer {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: rgba(44, 89, 223, 0.452);
+    background-color: rgba(44, 89, 223, 0.299);
     justify-content: center;
 }
 
@@ -42,6 +46,7 @@ form {
 }
 
 button {
+    color: #fff;
     width: auto;
     position: relative;
     text-align: center;
