@@ -130,6 +130,27 @@ p {
   text-align: center;
 }
 
+.adventures2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 20px;
+  font-family: var(--paragraph-font);
+}
+
+.adventures2 h2 {
+  padding-top: 180px;
+  grid-column: 1/-1;
+  justify-self: center;
+}
+
+.adventures2 figure {
+  text-align: center;
+  padding-top: .45rem;
+  /* padding: 20px; */
+  margin: 50px;
+  padding-bottom: .45rem;
+}
+
 img {
   width: 100%;
 }
@@ -152,8 +173,8 @@ figure {
 }
 
 figcaption{
-  font-size: 14px;
-  padding: .25em;
+  font-size: 1.5rem;
+  padding: .45em;
 }
 
 iframe{
@@ -203,23 +224,6 @@ textarea {
   border: none;
 }
 
-button {
-  width: 100%;
-  color: #fff;
-  background-color: var(--nav-background-color);
-  border: 1px solid #5633f1;
-  font-family: var(--paragraph-font);
-  padding: 20px;
-  font-size: 1rem;
-  border-radius: 20px;
-  margin-bottom: 100%;
-}
-
-button:hover {
-  background-color: var(--nav-hover-background-color);
-  border: var(--nav-background-color);
-}
-
 footer{
   padding: 20px;
   display: flex;
@@ -233,3 +237,60 @@ footer{
   align-self: center;
 }
 
+
+
+.div2_button {
+  width: 100%;
+  color: #fff;
+  background-color: var(--nav-background-color);
+  border: 1px solid #5633f1;
+  font-family: var(--paragraph-font);
+  padding: 20px;
+  font-size: 1rem;
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: var(--nav-hover-background-color);
+  border: var(--nav-background-color);
+}
+
+.trips {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 150px;
+  background-color: #da582090;
+  padding: 20px;
+  margin: 0;
+}
+
+.trips_button {
+  width: 100px;
+  color: #fff;
+  margin: 10px;
+  background-color: var(--nav-background-color);
+  font-family: var(--paragraph-font);
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+table, th, td {
+  padding: 10px;
+  background-color: #5633f1;
+  color: #fff;
+  /* border: 5px solid #fff; */
+}
+
+th, td {
+  background-color: #fff;
+  color: #000;
+  /* background-color: var(--accent2-color);  */
+  padding: 20px; 
+}
+
+th {
+  background-color: #1895cf;
+}
