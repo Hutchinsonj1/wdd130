@@ -15,10 +15,18 @@
   --nav-hover-background-color: #000000;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+body {
+  font-family: var(--paragraph-font);
 }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  }
+
+header, main, footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
@@ -28,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 /* FIX COLOR! */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 100px);
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
   background-color: var(--nav-background-color);
   border: 1px solid black;
   justify-content: center;
@@ -45,6 +53,22 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1em;
   justify-self: center;
 }
+
+
+.grid2 {
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1em;
+    justify-self: center;
+}
+
+.grid3 {
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
 
 header{
   display: grid;
@@ -70,20 +94,19 @@ body {
   background-color: #1895cf29;
 }
 
-.hero {
-    position: relative;
-}
-
-.hero img {
-  /* display: block; */
-  width: 100%;
-  /* height: auto; */
-}
-
+/* image in the short paragraph/article: */
 .hero article img{
   width: 200px;
   float: right;
+}
 
+.hero {
+  position: relative;
+  bottom: 30px;
+}
+
+.hero img {
+width: 100%;
 }
 
 .hero h1 {
@@ -93,6 +116,24 @@ body {
   width: 100%;
   text-align: center;
   padding: 10px;
+}
+
+.hero11 {
+  position: relative;
+}
+
+.hero11 img {
+width: 100%;
+}
+
+.hero11 h1 {
+  position: absolute;
+  /* left: 10%; */
+  top: 60%;
+  background-color: #ea430c92;
+  width: 60%;
+  text-align: 10px;
+  padding: 20px;
 }
 
 article {
@@ -120,10 +161,11 @@ p {
   gap: 30px 20px;
 }
 
-.adventures h2 {
-  padding-top: 30px;
-  grid-column: 1/-1;
-  justify-self: center;
+
+.adventures2 h6 {
+  color: #fff;
+  font-family: var(--paragraph-font)
+
 }
 
 .adventures figure {
@@ -133,22 +175,22 @@ p {
 .adventures2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px 20px;
-  font-family: var(--paragraph-font);
-}
+  gap: 10px 20px;
+  font-family: var(--heading-font);
+ }
 
 .adventures2 h2 {
-  padding-top: 180px;
+  padding-top: 100px;
   grid-column: 1/-1;
   justify-self: center;
+  color: var(--primary-color);
 }
 
 .adventures2 figure {
   text-align: center;
   padding-top: .45rem;
-  /* padding: 20px; */
   margin: 50px;
-  padding-bottom: .45rem;
+  /* border-radius: 20px; */
 }
 
 img {
@@ -156,18 +198,18 @@ img {
 }
 
 .sociallinks img {
-  width: 30px;
+  width: 50px;
   padding-top: 25px;
 }
 
 .sociallinks a {
   /* background-color: red; */
-  padding-right: 10px;
+  padding-right: 50px;
 }
 
 figure {
   margin: 0;
-  background-color: #5633f1;
+  background-color: var(--primary-color);
   color: #fff;
   /* padding: 0 0 1em 0; */
 }
@@ -185,38 +227,53 @@ iframe{
 
 fieldset {
   padding: 30px;
-  border: 1px solid #5633f1;
+  border: 1px solid var(--primary-color);
+  box-sizing: border-box;
 }
 
-#wrapper {
+.wrapper {
   display: flex;
-  border: 2px solid #5633f1;
-  border-top: 20px solid #5633f1;
-  border-bottom: 20px solid #5633f1;
+  border: 2px solid var(--primary-color);
+  border-top: 20px solid var(--primary-color);
+  border-bottom: 20px solid var(--primary-color);
   font-family: var(--paragraph-font);
-  /* margin-top: 20px; */
+  color: #000;
 }
-#div1 {
+
+.wrapper2 {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  /* grid-template-rows: 300px 1fr; */
+  border: 2px solid var(--primary-color);
+  border-top: 20px solid var(--primary-color);
+  border-bottom: 20px solid var(--primary-color);
+  font-family: var(--paragraph-font);
+  align-items: center;
+}
+
+
+.wrap1 {
     /* border: 1px solid red; */
     padding-top: 10px;
     color: #000;
     flex: 3;
     text-align: center;
 }
-#div2 {
+
+.wrap3 h2 {
+  color: var(--primary-color);
+}
+
+.wrap2 {
     /* border: 1px solid green; */
     flex: 1;
 }
 
-legend{
+legend {
   padding-top: 20px;
-  color: #5633f1;
+  color: var(--primary-color);
   text-align: center;
   font-weight: 700;
-}
-
-#wrapper h1, h2, p {
-  color: #000;
 }
 
 textarea {
@@ -233,55 +290,77 @@ footer{
 
 .copyright {
   padding-top: 20px;
-  padding-right: 20px;
-  align-self: center;
+  padding-right: 50px;
+  color: #000;
 }
 
 
 
-.div2_button {
+.wrap2_button {
   width: 100%;
   color: #fff;
-  background-color: var(--nav-background-color);
-  border: 1px solid #5633f1;
+  background-color: var(--primary-color);
+  border: 1px solid #000;
   font-family: var(--paragraph-font);
   padding: 20px;
   font-size: 1rem;
   border-radius: 20px;
 }
 
-button:hover {
+.wrap2_button:hover {
   background-color: var(--nav-hover-background-color);
   border: var(--nav-background-color);
 }
 
 .trips {
   text-align: center;
-  width: 100%;
-  position: absolute;
-  top: 150px;
-  background-color: #da582090;
+  background-color: var(--primary-color);
   padding: 20px;
-  margin: 0;
+  color: #fff;
+}
+
+.wrap3 {
+  padding-top: 10px;
+  color: #000;
+  flex: 3;
+  text-align: center;
+}
+
+.contact_button {
+  display: flex;
+  justify-content: center;
+  font-family: var(--paragraph-font);
 }
 
 .trips_button {
-  width: 100px;
-  color: #fff;
-  margin: 10px;
-  background-color: var(--nav-background-color);
+  display: flex;
+  justify-content: center;
   font-family: var(--paragraph-font);
-  padding: 10px;
-  font-size: 1rem;
+}
+
+.tb {
+  border: none;
+  padding: 20px;
+  background-color: var(--primary-color);
   border-radius: 20px;
-  text-decoration: none;
+}
+
+.tb a {
+  color: #fff;
+  font-family: var(--paragraph-font);
+  
+}
+
+.table {
+  display: flex;
+  justify-content: center;
 }
 
 table, th, td {
   padding: 10px;
-  background-color: #5633f1;
+  background-color: var(--primary-color);
   color: #fff;
-  /* border: 5px solid #fff; */
+  align-items: center;
 }
 
 th, td {
@@ -292,5 +371,22 @@ th, td {
 }
 
 th {
-  background-color: #1895cf;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.adventures h2 {
+  padding-top: 30px;
+  grid-column: 1/-1;
+  justify-self: center;
+  color: rgb(233, 67, 12);
+}
+
+.wrapper h1, h2, p {
+  color: rgb(233, 67, 12);
+}
+
+.purpose {
+  text-align: center;
+  border: 15px solid var(--nav-background-color);
 }
