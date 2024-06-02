@@ -342,8 +342,18 @@ footer{
   display: flex;
   justify-content: center;
   font-family: var(--paragraph-font);
-
   margin: 20px;
+}
+
+.submit {
+  background-color: var(--nav-background-color);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.submit:hover {
+  background-color: #000;
 }
 
 .contact_button {
