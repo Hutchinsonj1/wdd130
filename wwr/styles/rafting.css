@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, minmax(100px, 1fr));
-  background-color: var(--nav-background-color);
+  background-color: rgba(0, 0, 0, 0.55);
   border: 1px solid black;
   justify-content: center;
 }
@@ -48,7 +48,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .grid{
   text-decoration: none;
-  background-color: var(--nav-background-color);
+  /* background-color: #1895cf4f; */
+
   color: #fff;
   padding: 1em;
   justify-self: center;
@@ -61,12 +62,22 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     padding: 1em;
     justify-self: center;
+    width: 50%;
 }
 
 .grid3 {
   text-decoration: none;
-  background-color: var(--primary-color);
+  background-color: #1895cf4f;
   color: #fff;
+  justify-self: center;
+  width: 80%;
+  border: 1px solid var(--nav-background-color);
+}
+
+.grid3 legend {
+  background-color: var(--nav-background-color);
+  color: #fff;
+  padding: 20px;
 }
 
 
@@ -102,7 +113,6 @@ body {
 
 .hero {
   position: relative;
-  bottom: 30px;
 }
 
 .hero img {
@@ -112,10 +122,31 @@ width: 100%;
 .hero h1 {
   position: absolute;
   top: 50px;
-  background-color: #ea440c47;
+  background-color: rgba(0, 0, 0, 0.55);
   width: 100%;
   text-align: center;
   padding: 10px;
+  color: #fff;
+}
+
+article {
+  left: 50px;
+  position: absolute;
+  top: 125px;
+  right: 50px;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: var(--primary-color);
+}
+
+.hero p {
+  color: #fff;
+  padding: 0 2em;
+}
+
+figure {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: #fff;
 }
 
 .hero11 {
@@ -136,19 +167,6 @@ width: 100%;
   padding: 20px;
 }
 
-article {
-  left: 50px;
-  position: absolute;
-  top: 125px;
-  right: 50px;
-  background-color: #ea440c47;
-  color: var(--primary-color);
-}
-
-.hero p {
-  color: #fff;
-  padding: 0 2em;
-}
 
 p {
   font-family: var(--paragraph-font);
@@ -168,7 +186,7 @@ p {
 
 }
 
-.adventures figure {
+.adventures  {
   text-align: center;
 }
 
@@ -186,7 +204,7 @@ p {
   color: var(--primary-color);
 }
 
-.adventures2 figure {
+.adventures2  {
   text-align: center;
   padding-top: .45rem;
   margin: 50px;
@@ -207,13 +225,6 @@ img {
   padding-right: 50px;
 }
 
-figure {
-  margin: 0;
-  background-color: var(--primary-color);
-  color: #fff;
-  /* padding: 0 0 1em 0; */
-}
-
 figcaption{
   font-size: 1.5rem;
   padding: .45em;
@@ -227,7 +238,7 @@ iframe{
 
 fieldset {
   padding: 30px;
-  border: 1px solid var(--primary-color);
+  border: none;
   box-sizing: border-box;
 }
 
@@ -336,6 +347,7 @@ footer{
   display: flex;
   justify-content: center;
   font-family: var(--paragraph-font);
+  margin: 20px;
 }
 
 .tb {
