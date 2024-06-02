@@ -161,10 +161,11 @@ width: 100%;
   position: absolute;
   /* left: 10%; */
   top: 60%;
-  background-color: #ea430c92;
+  background-color: rgba(0, 0, 0, 0.55);
   width: 60%;
   text-align: 10px;
   padding: 20px;
+  color: #fff;
 }
 
 
@@ -335,6 +336,14 @@ footer{
   color: #000;
   flex: 3;
   text-align: center;
+}
+
+.wrap3 form{
+  display: flex;
+  justify-content: center;
+  font-family: var(--paragraph-font);
+
+  margin: 20px;
 }
 
 .contact_button {
