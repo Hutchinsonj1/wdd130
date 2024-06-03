@@ -105,7 +105,7 @@ body {
   background-color: #1895cf29;
 }
 
-.hero section img{
+.hero div img{
   width: 200px;
   float: right;
 }
@@ -128,7 +128,7 @@ width: 100%;
   color: #fff;
 }
 
-.hero section {
+.hero div {
   left: 50px;
   position: absolute;
   top: 125px;
