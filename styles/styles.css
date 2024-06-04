@@ -20,7 +20,7 @@ aside img{
 }
 
 aside h2{
-	position: relative;
+	position: absolute;
 	padding: 10px;
 }
 
