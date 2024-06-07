@@ -1,0 +1,44 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ff787856;
+    gap: 30px;
+    padding: 20px;
+}
+
+.card{
+    border: 1px solid red;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 0, 0, 0.116);
+}
+
+.grid-container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3.5fr 1.5fr;
+    background-color: rgba(110, 255, 207, 0.495);
+    gap: 50px;
+    /* top, right, bottom, left */
+    padding: 50px 200px 100px 200px;
+}
+
+.g-card{
+    border: 1px solid #000;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 255, 255, 0.495);
+    /* 20 or 30 on Border border-radius */
+    border-radius: 20px;
+    /* color: #fff; */
+}
+
+.red_hot{
+    text-align: center;
+    border: 1px solid red;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+}

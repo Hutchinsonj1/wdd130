@@ -26,6 +26,11 @@ body {
 header, main, footer {
   max-width: 1000px;
   margin: 0 auto;
+  /* box-shadow: 0 0 30px rgba(0, 0, 255, 0.643); */
+}
+
+header, main {
+  box-shadow: 0 0 30px rgba(0, 0, 255, 0.343);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -63,22 +68,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1em;
     justify-self: center;
     width: 50%;
+    margin-bottom: 50px;
 }
 
-.grid3 {
-  text-decoration: none;
-  color: #000;
-  justify-self: center;
-  width: 80%;
-  border: 1px solid var(--nav-background-color);
-}
 
-.grid3 legend {
-  border: 1px solid blue;
-  background-color: #1895cf33; 
-  color: blue;
-  padding: 20px;
-}
 
 
 header{
@@ -99,7 +92,6 @@ nav {
 a {
   text-decoration: none;
 }
-
 
 body {
   background-color: #1895cf29;
@@ -145,8 +137,8 @@ width: 100%;
 
 figure {
   margin: 0;
-  background-color: rgb(233, 67, 12);
-  color: #fff;
+  background-color: #1895cf33;
+  color: blue;
 }
 
 .adventures2 figure {
@@ -258,8 +250,7 @@ fieldset {
 
 .wrapper2 {
   display: grid;
-  grid-template-columns: 1fr 300px;
-  /* grid-template-rows: 300px 1fr; */
+  grid-template-columns: 1fr 500px;
   border: 2px solid var(--primary-color);
   border-top: 20px solid var(--primary-color);
   border-bottom: 20px solid var(--primary-color);
@@ -267,6 +258,16 @@ fieldset {
   align-items: center;
 }
 
+.wrapper3 {
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  border: 2px solid var(--primary-color);
+  border-top: 20px solid var(--primary-color);
+  border-bottom: 20px solid var(--primary-color);
+  font-family: var(--paragraph-font);
+  align-items: center;
+  padding-top: 70px;
+}
 
 .wrap1 {
     /* border: 1px solid red; */
@@ -313,15 +314,56 @@ footer{
   color: #000;
 }
 
+.grid3 {
+  text-decoration: none;
+  color: #000;
+  justify-self: center;
+  width: 80%;
+  text-align: center;
+  border: 1px solid blue;
+}
+
+.grid3 legend {
+  border: 1px solid blue;
+  background-color: #1895cf33; 
+  color: blue;
+  padding: 20px;
+}
+
 .wrap2_button {
   width: 100%;
   color: blue;
-  background-color: #1895cf33; 
+  background-color: #fff;
   border: 1px solid blue;
   font-family: var(--paragraph-font);
   padding: 20px;
   font-size: 1rem;
   border-radius: 20px;
+}
+
+.wrap3 {
+  padding-top: 10px;
+  color: #000;
+  flex: 3;
+  text-align: center;
+  padding-right: 50px;
+}
+
+.wrap3 form{
+  display: flex;
+  justify-content: center;
+  font-family: var(--paragraph-font);
+  margin: 20px;
+}
+.adventures h2, .wrap3 h2{
+  padding-top: 17px;
+  grid-column: 1/-1;
+  justify-self: center;
+  color: rgb(233, 67, 12);
+}
+
+.grid3 h2{
+  color: rgb(233, 67, 12);
 }
 
 .wrap3_button {
@@ -346,22 +388,8 @@ footer{
   color: #fff;
 }
 
-.wrap3 {
-  padding-top: 10px;
-  color: #000;
-  flex: 3;
-  text-align: center;
-}
-
-.wrap3 form{
-  display: flex;
-  justify-content: center;
-  font-family: var(--paragraph-font);
-  margin: 20px;
-}
-
 .submit {
-  background-color: #1895cf33; 
+  background-color: #fff;
   color: blue;
   padding: 10px;
   border-radius: 10px;
@@ -406,18 +434,6 @@ th {
   color: blue;
 }
 
-.adventures h2, .wrap3 h2 {
-  padding-top: 30px;
-  grid-column: 1/-1;
-  justify-self: center;
-  color: rgb(233, 67, 12);
-}
-
 .wrapper h1, h2, p {
   color: #000;
-}
-
-.purpose {
-  text-align: center;
-  /* border: 15px solid var(--nav-background-color); */
 }

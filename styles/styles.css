@@ -36,7 +36,7 @@ footer{
 }
 
 nav {
-  background-color: steelblue;
+  background-color: #1895cf33; 
   padding: 1rem;
   display: flex;
   justify-content: space-evenly;
@@ -49,16 +49,16 @@ nav a {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #fff;
+  color: blue;
 }
 h1 {
-	color: steelblue;
+	color: blue; 
 	border-bottom: 3px solid black;
 }
 main img{
 	width: 150px;
 	height: auto;
-	border: 1px solid steelblue;
+	border: 1px solid #1895cf33;
 	padding: 2px;
 	box-shadow: 0 0 30px gray;
 	float: right;
@@ -70,15 +70,15 @@ p{
 /* Class Selectors */
 .box{
 	margin: 1rem;
-	border: 1px solid steelblue;
+	border: 1px solid #1895cf33;
 	padding: 1rem;
-	background-color: steelblue;
-	color: #fff;
+	background-color: #1895cf33;
+	color: blue;
 }
 
 li a {
 	text-decoration: none;
-	color: #fff;
+	color: blue;
 }
 
 .grid {
