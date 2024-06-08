@@ -44,6 +44,7 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-columns: repeat(4, minmax(100px, 1fr));
   background-color: #1895cf33; 
   border: 1px solid blue;
+  border-right: none;
   justify-content: center;
 }
 
